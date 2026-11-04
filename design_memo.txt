@@ -1,0 +1,11 @@
+A graph is the right type of data structure to represent a social network for a couple of different reasons. 
+First of all, there (usually) is not any sort of hierarchy in a network of friendships, which is something that 
+is not present in a graph. Secondly, in a network of friendships, any given person in the network typically has 
+a lot of friendships, meaning that any sort of list type of data structure, including things like linked lists 
+and hash tables, are not entirely valid here. Graphs can satisfy both of the aforementioned conditions, making 
+them the only natural choice. A list or tree wouldn’t work as well because they don’t support a function that 
+could be seen as key to the proper storage of data. One thing that I noticed while making the graph structure 
+and functions is that graphs are basically just linked lists that contain dictionaries, which in turn contain a 
+simple list. This observation applies not only to adjacency lists, a type of graph, but also to adjacency 
+matrices, another type of graph. The big difference between the two is that matrices do not store a list of 
+what each node connects to, but a list of binary values that dictate what each node connects to.
